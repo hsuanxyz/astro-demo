@@ -1,0 +1,19 @@
+---
+import type { MarkdownLayoutProps } from 'astro';
+import Layout from "./Layout.astro";
+
+type Prop = MarkdownLayoutProps<{
+  title: string;
+}>
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <article class="prose max-w-none">
+    <div
+      class="sm:py-18 container relative mx-auto px-6 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20">
+      <slot/>
+    </div>
+  </article>
+</Layout>
