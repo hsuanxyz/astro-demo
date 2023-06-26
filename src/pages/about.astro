@@ -1,16 +1,17 @@
 ---
-import Layout from "../components/Layout.astro";
-import Count from "../components/count";
-const title = "About";
+import Layout from '../components/Layout.astro';
+import Count from '../components/count.tsx';
+
+const title = 'About';
 
 const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
+  firstName: 'Sarah',
+  country: 'Canada',
+  occupation: 'Technical Writer',
+  hobbies: ['photography', 'birdwatching', 'baseball'],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Astro', 'Writing Docs'];
 ---
 
 <Layout title={title}>
@@ -21,8 +22,12 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
   <ul>
     <li>My name is {identity.firstName}.</li>
     <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-    {identity.hobbies.length >= 2 &&
-      <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+    {
+      identity.hobbies.length >= 2 && (
+        <li>
+          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
+        </li>
+      )
     }
   </ul>
   <p>My skills are:</p>

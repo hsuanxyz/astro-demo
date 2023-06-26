@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier --write . --cache",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@astrojs/mdx": "^0.19.7",
@@ -19,6 +21,19 @@
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9"
+    "@tailwindcss/typography": "^0.5.9",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-plugin-astro": "^0.27.2",
+    "eslint-plugin-solid": "^0.12.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "estree-util-is-identifier-name": "^2.1.0",
+    "estree-util-value-to-estree": "^3.0.1",
+    "prettier": "^2.8.8",
+    "prettier-plugin-astro": "^0.10.0"
   }
 }

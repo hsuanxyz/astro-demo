@@ -6,9 +6,10 @@ author: 'Astro Learner'
 image:
 url: 'https://docs.astro.build/assets/full-logo-light.png'
 alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public"]
-layout: "~/components/PostLayout.astro"
+tags: ['astro', 'blogging', 'learning in public']
+layout: '~/components/PostLayout.astro'
 ---
+
 # My First Blog Post
 
 Published on: 2022-07-01

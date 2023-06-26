@@ -1,6 +1,6 @@
-import {createSignal} from "solid-js";
+import { createSignal } from 'solid-js';
 
-export const Count = () => {
+export default () => {
   const [count, setCount] = createSignal(0);
   return (
     <div>
@@ -8,6 +8,4 @@ export const Count = () => {
       <span>You clicked me {count()} times</span>
     </div>
   );
-}
-
-export default Count;
+};
